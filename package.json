@@ -6,7 +6,7 @@
   "module": "build/module/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZMALIM/control-see.git"
+    "url": "https://github.com/ZMALIM/-control-see.git"
   },
   "files": [
     "lib/"
