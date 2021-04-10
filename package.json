@@ -1,8 +1,9 @@
 {
-  "name": "@control/see",
-  "version": "1.0.1",
+  "name": "control-see",
+  "version": "1.0.2",
   "description": "Control Util Documentos Electronicos SUNAT",
   "main": "lib/main/index.js",
+  "typings": "lib/main/index.d.ts",
   "module": "lib/module/index.js",
   "repository": {
     "type": "git",
