@@ -1,8 +1,10 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "outDir": "./lib/main"
+    "target": "esnext",
+    "lib": ["es2016", "dom"],
+    "outDir": "lib/module",
+    "module": "esnext"
   },
   "exclude": ["node_modules", "test", "lib", "**/*spec.ts"]
 }

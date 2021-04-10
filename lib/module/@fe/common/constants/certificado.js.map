@@ -1,1 +1,1 @@
-{"version":3,"file":"certificado.js","sourceRoot":"","sources":["../../../../../src/@fe/common/constants/certificado.ts"],"names":[],"mappings":";;;AAAa,QAAA,WAAW,GAAG;IACvB,YAAY,EAAE,aAAa;IAC3B,KAAK,EAAE,aAAa;CACvB,CAAC"}
+{"version":3,"file":"certificado.js","sourceRoot":"","sources":["../../../../../src/@fe/common/constants/certificado.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,WAAW,GAAG;IACvB,YAAY,EAAE,aAAa;IAC3B,KAAK,EAAE,aAAa;CACvB,CAAC"}

@@ -1,1 +1,1 @@
-{"version":3,"file":"sign.js","sourceRoot":"","sources":["../../../../../../src/@fe/common/exchange/responses/sign.ts"],"names":[],"mappings":";;;AAAA,mCAAgC;AAEhC,MAAa,MAAO,SAAQ,aAAK;CAKhC;AALD,wBAKC"}
+{"version":3,"file":"sign.js","sourceRoot":"","sources":["../../../../../../src/@fe/common/exchange/responses/sign.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC;AAEhC,MAAM,OAAO,MAAO,SAAQ,KAAK;CAKhC"}
