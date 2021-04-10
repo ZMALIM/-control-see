@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Invoice</title>
+        <link rel="stylesheet" href="../css/style.css" media="all" />
+    </head>
+
+    <body>
+        <header class="clearfix">
+            <div class="head">
+                <div class="company">
+                    <div class="logo">
+                        <img src="/img/logo.png">
+                    </div>
+                    <div class="data">
+                        <span>Razon Social</span>
+                        <span>Direccion Completa de empresa</span>
+                        <span>Departamento - Provincia - Distrito</span>
+                        <span>Telf fijo - Telf Movil</span>
+                        <a href="mailto:john@example.com">john@example.com</a>
+                    </div>
+                </div>
+                <div class="invoice">
+                    <div class="serie">
+                        <span>R.U.C. 20515836471</span>
+                        <span class="type">BOLETA ELECTRONICA</span>
+                        <span>B001 - 00021375</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client">
+                <div class="row">
+                    <div class="info">
+                        <label>Razón Social</label>
+                        <div>ESTUDIO CONTABLE BUSTAMANTE & VICHARRA SOCIEDAD
+                            ANONIMA CERRADA - ESTUDIO CONTABLE BUSTAMANTE & VIC
+                        </div>
+                        <span>Razón Social del cliente</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="info">
+                        <label>Dirección</label>
+                        <div>LEONEL HACHA SALAZAR</div>
+                        <span>Dirección Completa del Cliente</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="info">
+                        <label>Nro de Documento</label>
+                        <div>LEONEL HACHA SALAZAR</div>
+                        <span>Nro. de documento del cliente</span>
+                    </div>
+                    <div class="info">
+                        <label>Fecha de Emisión</label>
+                        <div>LEONEL HACHA SALAZAR</div>
+                        <span>Fecha de Emisión</span>
+                    </div>
+                    <div class="info">
+                        <label>Moneda</label>
+                        <div>LEONEL HACHA SALAZAR</div>
+                        <span>Moneda</span>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="service">Cantidad</th>
+                        <th class="desc">Descripción</th>
+                        <th>Precio Unitario</th>
+                        <th>Valor de venta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="item">
+                        <td class="service">Design</td>
+                        <td class="desc">Creating a recognizable design solution based on the company's existing visual
+                            identity</td>
+                        <td class="unit">$40.00</td>
+                        <td class="total">$1,040.00</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="service">Development</td>
+                        <td class="desc">Developing a Content Management System-based Website</td>
+                        <td class="unit">$40.00</td>
+                        <td class="total">$3,200.00</td>
+                    </tr class="item">
+                    <tr class="item">
+                        <td class="service">SEO</td>
+                        <td class="desc">Optimize the site for search engines (SEO)</td>
+                        <td class="unit">$40.00</td>
+                        <td class="total">$800.00</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="service">Training</td>
+                        <td class="desc">Initial training sessions for staff responsible for uploading web content</td>
+                        <td class="unit">$40.00</td>
+                        <td class="total">$160.00</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="full-info">
+                <div class="barcode">
+                    <img src="barcode.png" alt="codigo">
+                </div>
+                <div class="total">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="grand label">SUBTOTAL</td>
+                                <td class="grand total">$5,200.00</td>
+                            </tr>
+                            <tr>
+                                <td class="grand label">I.G.V. (18%)</td>
+                                <td class="grand total">$1,300.00</td>
+                            </tr>
+                            <tr>
+                                <td class="grand label total">TOTAL</td>
+                                <td class="grand total">$6,500.00</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="info" style="width: inherit;">
+                <div>SON: CIENTO TREINTA Y CINCO CON 00/100</div>
+                <span>Monto en Letras</span>
+            </div>
+        </main>
+        <footer>
+            Invoice was created on a computer and is valid without the signature and seal.
+        </footer>
+
+    </body>
+
+</html>

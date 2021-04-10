@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Comprobante de Pago Electronico</title>
+    </head>
+
+    <body>
+        <header class="clearfix">
+            <div class="head">
+                <div class="company">
+                    <div class="logo">
+                        <img src="{{empresa.logo}}" alt="Logo de Empresa">
+                    </div>
+                    <div class="data">
+                        <span>{{empresa.razonSocial}}</span>
+                        <span>{{empresa.direccion}}</span>
+                        <span>{{empresa.departamento}} - {{empresa.provincia}} - {{empresa.distrito}}</span>
+                        <span>{{empresa.telefono}}</span>
+                        <a href="mailto:{{empresa.email}}">{{empresa.email}}</a>
+                    </div>
+                </div>
+                <div class="invoice">
+                    <div class="serie">
+                        <span>R.U.C. {{empresa.nroDocumento}}</span>
+                        {{#ifEquals tipoDocumento '03'}}
+                        <span class="type">BOLETA ELECTRONICA</span>
+                        {{/ifEquals}}
+                        {{#ifEquals tipoDocumento '01'}}
+                        <span class="type">FACTURA ELECTRONICA</span>
+                        {{/ifEquals}}
+                        <span>{{serie}} - {{correlativo}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client">
+                <div class="row">
+                    <div class="info">
+                        <label>Razón Social</label>
+                        <div>{{cliente.razonSocial}}</div>
+                        <span>Razón Social del Cliente</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="info">
+                        <label>Dirección</label>
+                        <div>{{cliente.direccion}}</div>
+                        <span>Dirección Completa del Cliente</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="info">
+                        <label>Nro. de Documento</label>
+                        <div>{{cliente.nroDocumento}}</div>
+                        <span>Nro. de Documento del Cliente</span>
+                    </div>
+                    <div class="info">
+                        <label>Fecha de Emisión</label>
+                        <div>{{fechaEmision}}</div>
+                        <span>Fecha de Emisión del Comprobante</span>
+                    </div>
+                    <div class="info">
+                        <label>Moneda</label>
+                        <div>{{moneda.descripcion}}</div>
+                        <span>Moneda</span>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="quantity">Cantidad</th>
+                        <th class="desc">Descripción</th>
+                        <th>Precio Unitario</th>
+                        <th>Valor de venta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#items}}
+                    <tr class="item">
+                        <td class="quantity">{{cantidad}}</td>
+                        <td class="desc">{{descripcion}}</td>
+                        <td class="unit">{{precioUnitario}}</td>
+                        <td class="total">{{totalVenta}}</td>
+                    </tr>
+                    {{/items}}
+                </tbody>
+            </table>
+            <div class="full-info">
+                <div class="barcode">
+                    <img src="{{barcode}}" alt="Representación Impresa del Comprobante Electronico">
+                </div>
+                <div class="total">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="grand label">SUBTOTAL</td>
+                                <td class="grand total">{{moneda.simbolo}} {{subTotal}}</td>
+                            </tr>
+                            <tr>
+                                <td class="grand label">I.G.V. (18%)</td>
+                                <td class="grand total">{{moneda.simbolo}} {{totalIgv}}</td>
+                            </tr>
+                            <tr>
+                                <td class="grand label total">TOTAL</td>
+                                <td class="grand total">{{moneda.simbolo}} {{totalVenta}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="info" style="width: inherit;">
+                <div>SON: {{montoLetras}}</div>
+                <span>Total en Letras</span>
+            </div>
+        </main>
+        <footer>
+            Esta es una representación impresa del comprobante electronico, generada el sistema CONTROL.
+        </footer>
+
+    </body>
+
+</html>

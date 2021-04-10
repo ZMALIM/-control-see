@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "lib": ["es2016", "es6", "es2015", "dom"],
+      "declaration": true,
+      "removeComments": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "allowSyntheticDefaultImports": true,
+      "target": "es6",
+      "moduleResolution": "Node",
+      "sourceMap": true,
+      "outDir": "./lib/module",
+      "baseUrl": "./src",
+      "types": ["node"],
+      "typeRoots": ["node_modules/@types"],
+      "pretty": true,
+      "paths": {
+        "@fe/*": ["@fe/*"]
+      },
+      "rootDirs": [
+        "@fe/common/constants",
+        "@fe/common/exchange",
+        "@fe/common/abstract",
+        "@fe/common/data",
+        "@fe/common/models",
+        "@fe/common/types",
+        "@fe/structures",
+        "@fe/signer",
+        "@fe/xml",
+        "@fe/ws",
+        "@fe/utils",
+        "@fe/serializer",
+        "@fe/pdf",
+        "@fe/see",
+        "@fe/standard",
+        "@fe/factory"
+      ]
+    },
+    "include":  ["src/**/*"],
+    "exclude": ["node_modules"]
+  }

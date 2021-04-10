@@ -1,0 +1,30 @@
+import { UblExtensions, DiscrepancyResponse, BillingReference, InvoiceDocumentReference, SignatureCac, AccountingSupplierParty, TaxTotal, LegalMonetaryTotal, InvoiceLine } from '@fe/structures';
+export declare class CreditNote {
+    protected readonly xmlns: string;
+    protected readonly cac: string;
+    protected readonly cbc: string;
+    protected readonly ccts: string;
+    protected readonly ds: string;
+    protected readonly ext: string;
+    protected readonly qdt: string;
+    protected readonly sac: string;
+    protected readonly udt: string;
+    protected readonly xsi: string;
+    ublExtensions: UblExtensions;
+    ublVersionID: string;
+    customizationID: string;
+    id: string;
+    issueDate: string;
+    documentCurrencyCode: string;
+    discrepancyResponses: DiscrepancyResponse[];
+    billingReferences: BillingReference[];
+    despatchDocumentReferences: InvoiceDocumentReference[];
+    additionalDocumentReferences: InvoiceDocumentReference[];
+    signature: SignatureCac;
+    accountingSupplierParty: AccountingSupplierParty;
+    accountingCustomerParty: AccountingSupplierParty;
+    taxTotals: TaxTotal[];
+    legalMonetaryTotal: LegalMonetaryTotal;
+    creditNoteLines: InvoiceLine[];
+    constructor();
+}

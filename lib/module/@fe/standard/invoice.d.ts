@@ -1,0 +1,37 @@
+import { UblExtensions, InvoiceDocumentReference, SignatureCac, AccountingSupplierParty, TaxTotal, LegalMonetaryTotal, InvoiceLine, InvoiceTypeCode, Note, DocumentCurrencyCode, PrepaidPayment, OrderReference, DespatchDocumentReference, AllowanceCharge, ProfileID } from '@fe/structures';
+export declare class Invoice {
+    protected readonly xmlns: string;
+    protected readonly cac: string;
+    protected readonly cbc: string;
+    protected readonly ccts: string;
+    protected readonly ds: string;
+    protected readonly ext: string;
+    protected readonly qdt: string;
+    protected readonly sac: string;
+    protected readonly udt: string;
+    protected readonly xsi: string;
+    ublExtensions: UblExtensions;
+    ublVersionID: string;
+    customizationID: string;
+    profileID: ProfileID;
+    id: string;
+    issueDate: string;
+    issueTime: string;
+    dueDate: string;
+    invoiceTypeCode: InvoiceTypeCode;
+    note: Note;
+    documentCurrencyCode: DocumentCurrencyCode;
+    lineCountNumeric: string;
+    additionalDocumentReferences: InvoiceDocumentReference[];
+    signature: SignatureCac;
+    accountingSupplierParty: AccountingSupplierParty;
+    accountingCustomerParty: AccountingSupplierParty;
+    prepaidPayment: PrepaidPayment;
+    allowanceCharge?: AllowanceCharge;
+    taxTotals: TaxTotal[];
+    orderReference: OrderReference;
+    despatchDocumentReferences: DespatchDocumentReference[];
+    legalMonetaryTotal: LegalMonetaryTotal;
+    invoiceLine: InvoiceLine[];
+    constructor();
+}
