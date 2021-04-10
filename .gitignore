@@ -1,9 +1,7 @@
 # compiled output
-/dist
+/lib
 /node_modules
 
-# CPE - Files
-/files
 
 # Logs
 logs
@@ -35,6 +33,4 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
-# Orm - Log
-ormlogs.log
+package-lock.json
